@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+  <h1>This is my index</h1>
+
+  {% include 'riot/added_tags.html' %}
+  <script type="riot/tag" src="{% static 'riot/added_pages.tag' %}"></script>
+{% endblock %}

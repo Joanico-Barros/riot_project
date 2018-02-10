@@ -1,0 +1,27 @@
+{
+  "name": "riot_project",
+  "homepage": "https://github.com/Joanico-Barros/riot_project",
+  "authors": [
+    "Joanico-Barros <joanico@catalpa.io>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "c3": "^0.4.18",
+    "jquery-validation": "^1.17.0",
+    "RiotControl": "riotcontrol#*",
+    "riot-route": "^3.1.2",
+    "select2": "^4.0.5",
+    "moment": "^2.20.1"
+  }
+}

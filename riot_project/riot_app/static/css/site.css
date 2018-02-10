@@ -1,0 +1,34 @@
+body{
+    font-family: ProximaNovaA-Regular;
+    background-color: #FFFFFF;
+    font-size: 13px;
+    color: #3d464d;
+}
+
+.header{
+    background: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+	  padding-left: 0px;
+    padding-right: 0px;
+    font-size:15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.footer{
+    border-top: 1px solid #e5e5e5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+h2 {
+    color: #3D464D;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-family: ProximaNovaA-bold;
+    font-weight: 100;
+}
+
