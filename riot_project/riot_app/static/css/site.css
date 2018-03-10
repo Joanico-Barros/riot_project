@@ -5,16 +5,6 @@ body{
     color: #3d464d;
 }
 
-.header{
-    background: #fff;
-    padding-top: 30px;
-    padding-bottom: 30px;
-	  padding-left: 0px;
-    padding-right: 0px;
-    font-size:15px;
-    border-bottom: 1px solid #e5e5e5;
-}
-
 .footer{
     border-top: 1px solid #e5e5e5;
     padding-top: 30px;
@@ -32,3 +22,23 @@ h2 {
     font-weight: 100;
 }
 
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div#myNavbar {
+    padding-bottom: 45px;
+}
+
+ul.nav.navbar-nav {
+    padding-top: 20px;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+a.navbar-brand {
+	padding-top: 33px;
+	font-size: 16px;
+	font-family: monospace;
+}

@@ -1,10 +1,22 @@
 {% extends 'base.html' %}
+
 {% load static %}
 {% load i18n %}
 
 {% block content %}
-  <h1>This is my index</h1>
-
-  {% include 'riot/added_tags.html' %}
-  <script type="riot/tag" src="{% static 'riot/added_pages.tag' %}"></script>
+	<div class="rows">
+		<div class="col-md-12 content">
+			<h1>This is my index</h1>
+			This my firts testing some aplication
+			<img class="peter" scr="{% static 'img/apeu.jpg' %}" />
+			{% include 'riot/added_tags.html' %}
+			<script type="riot/tag" src="{% static 'riot/added_pages.tag' %}"></script>
+			<div class="container">
+			  <h3>Collapsible Navbar</h3>
+			  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+			  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+			</div>
+		</div>
+	</div>
 {% endblock %}
+

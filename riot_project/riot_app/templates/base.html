@@ -3,44 +3,48 @@
 
 <html>
 <head>
-    <script src="riot+compiler.js"></script>
-    <script type="text/javascript" src="{% static 'jquery/dist/jquery.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'd3/d3.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'c3/c3.min.js' %}"></script>
-    
-    <link type="text/css" rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}" />
-    <link type="text/css" rel="stylesheet" href="{% static 'select2/dist/css/select2.min.css' %}" />
-    <link type="text/css" rel="stylesheet" href="{% static 'css/MyFontsWebfontsKit.css' %}" />
-    <link type="text/css" rel="stylesheet" href="{% static 'Ionicons/css/ionicons.min.css' %}" />
-    <link type="text/css" rel="stylesheet" href="{% static 'css/site.css' %}" />
-    <link type="text/css" rel="stylesheet" href="{% static 'c3/c3.min.css' %}" />
-    <link type="text/css" rel="stylesheet" href="{% static 'tether-shepherd/dist/css/shepherd-theme-arrows.css' %}" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="riot+compiler.js"></script>
+	<script type="text/javascript" src="{% static 'jquery/dist/jquery.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'd3/d3.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'c3/c3.min.js' %}"></script>
+
+	<link type="text/css" rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}" />
+	<link type="text/css" rel="stylesheet" href="{% static 'select2/dist/css/select2.min.css' %}" />
+	<link type="text/css" rel="stylesheet" href="{% static 'css/MyFontsWebfontsKit.css' %}" />
+	<link type="text/css" rel="stylesheet" href="{% static 'Ionicons/css/ionicons.min.css' %}" />
+	<link type="text/css" rel="stylesheet" href="{% static 'css/site.css' %}" />
+	<link type="text/css" rel="stylesheet" href="{% static 'c3/c3.min.css' %}" />
+	<link type="text/css" rel="stylesheet" href="{% static 'tether-shepherd/dist/css/shepherd-theme-arrows.css' %}" />
 	<title>Welcome to my site</title>
 </head>
 <body>
-  {% block header %}
-    <h2>This my header</h2>
-  {% endblock %}
+	{% block header %}
+	<div class="rows header"
+		<div class=col-md-12>
+			{% include 'base_site.html'%}
+		</div>
+	</div>
+	{% endblock %}
+	
+	<div class="container">
+		{% block content %}
+		{% endblock %}
+	</div>
 
-  <div class="container">
-    {% block content %}
-      <h2>This my content</h2>
-      <added_pages></added_pages>
-    {% endblock %}
-  </div>
-
-  {% block footer %}
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 footer">
-          {% block footer_links %}
-            <h2>This my footer</h2>
-          {% endblock%}
-          <p align="center">Copyright<a href="http://catalpa.io" target="_black">Catalpa International</a></p>
-        </div>
-      </div>
-    <div>
-  {% endblock %}
+	{% block footer %}
+	  <div class="row footer">
+		<div class="col-md-12 footer">
+			<h2>This my footer</h2>
+		  <p align="center">Copyright<a href="http://catalpa.io" target="_black">Catalpa International</a></p>
+		</div>
+	  </div>
+	{% endblock %}
 </body>
 </html>
